@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <title>History and Briefing</title>
+        
+
+        <style>
+           
+            body{
+                width: 1800px;
+                font-family: 'Roboto Flex', sans-serif;;
+                margin-left: auto;
+                margin-left: auto;
+                background-color: rgb(236, 229, 229);
+                color: rgb(51, 50, 50);
+            }
+            h1 {
+                font-family: 'Comfortaa', sans-serif;
+                font-size: 30px;
+                margin: 20px;
+                
+            }
+            h2 a {
+                color: rgb(51, 50, 50);
+                text-decoration: none
+            }
+
+            h2 {
+                font-family: 'Roboto Flex', sans-serif;
+                font-size:  30px;
+                padding-left:10px;
+
+                
+
+            }
+            ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                overflow: hidden;
+                background-color: rgb(255, 68, 68);
+                border-radius: 15px;
+            }
+
+            ul li {
+                float: left;
+                font-family: 'Comfortaa', sans-serif;
+            }
+
+            ul li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 20px 50px;
+                text-decoration: none;
+                transition-duration: .5s;
+                padding-left: 96px;
+                padding-right: 96px;
+            }
+            ul li a:hover {
+                background-color: rgb(70, 69, 69);
+            }
+
+        
+
+            #pagetitle { 
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 40px;
+                padding-left: 15px;
+                
+            }
+            p {
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 23px;
+                margin: 10px;
+                
+            }
+            #main {
+                height: 1080px;
+                width: 1728px;
+                margin: 0 auto;
+                
+            }
+            #heading{
+                background-position: center center;
+                background-size: cover;
+           
+                
+            }
+            
+            #briefing1{
+                
+                width: 40%;
+                height: 30%;
+                float: left;
+                background-color: rgb(185, 56, 56);
+                border-radius: 30px;
+                border-style: solid;
+                border-width: 15px;
+                border-left-width: 15px;
+                border-right-width: 15px;
+                border-color: rgb(236, 229, 229);
+                margin-left: 33px;
+                padding: 5px;
+                margin-top: .5px;
+            }
+                
+            #history1{ 
+                width: 50%;
+                height: 60%;
+                float: right;
+                background-color: rgb(245, 187, 100);
+                border-radius: 30px;
+                border-style: solid;
+                border-width: 15px;
+                border-left-width: 15px;
+                border-right-width: 15px;
+                border-color: rgb(236, 229, 229);
+                padding: 5px;
+             
+
+                
+                
+            }
+
+            
+         
+            .timeline {
+        background-color: rgb(59, 38, 68);
+        font-family: Helvetica, sans-serif;
+        padding: 5px;
+        border-radius: 20px;
+        width: 40%;
+        height: 30%; 
+        float:left;
+        margin-bottom: 50px;
+        
+      }
+      
+      
+      .timeline {
+        position: relative;
+        margin-left: 47px;
+      }
+      
+      
+      .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: rgb(255, 255, 255);
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+      }
+      
+      
+      .container {
+        padding: 18.5px;
+        position: relative;
+        
+        width: 45%;
+      }
+      
+     
+      .container::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -17px;
+        background-color: white;
+        border: 4px solid #ffd104;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+      }
+      
+      
+      .left {
+        left: 0;
+      }
+      
+      
+      .right {
+        left: 50%;
+      }
+    
+      
+      
+      .right::after {
+        left: -16px;
+      }
+      
+     
+      .content {
+        padding: 20px 30px;
+        background-color: rgb(147, 0, 206);
+        position: relative;
+        border-radius: 6px;
+      }
+      .content1 {
+        padding: 20px 30px;
+        background-color: rgb(156, 121, 6);
+        position: relative;
+        border-radius: 6px;
+      }
+      
+      
+      @media screen and (max-width: 600px) {
+       
+        .timeline::after {
+        left: 31px;
+        }
+        
+    
+        .container {
+        width: 100%;
+        
+        padding-right: 25px;
+        }
+        
+    
+        .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+        }
+      
+  
+        .left::after, .right::after {
+        left: 15px;
+        }
+        
+       
+        .right {
+        left: 0%;
+        }
+      }
+
+        </style>
+        </head>
+        <body>     
+    <p id="pagetitle">ValoTracker - The (Not So) Official Webtracker for <img src="800px-VCT_2023_logo_lightmode.png" alt="vct logo"
+        style="float: right; width: 200px; height: auto; padding-right: 650px;"></p>
+
+<hr>
+<div id="nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href= "History_and_briefing.html">History</a></li>
+        <li><a href="Leagues.html">Valorant Franchised Leagues</a></li>
+        <li><a href="Events.html">Events</a></li>
+        <li><a href="AboutMe.html">About</a></li>
+        
+      </ul>
+</div>
+<div id="briefing1">
+    <h1>What is VCT?</h1>
+    <p>VALORANT Champions Tour (VCT) is the official competitive circuit for Riot Games' tactical first-person shooter VALORANT. Boasting two years of competitive history, the developer backed circuit features teams
+        from all across the world, competing to be the very best in global  Masters and Champions tournaments each crowning an international champion. Watch as careers are defined, underdogs arise, and champions are crowned.</p>
+    
+    
+      
+</div>
+<div id="history1">
+    <h1>History Explained</h1>
+    <p>A Recap of VALORANT's International Competitive History
+    </p>
+    <h1>2021</h1>
+    <h2 id ="Masters_2_2021">Masters Reykjavik 2021</h2>
+    <p>The first ever International VALORANT event to be held in person in Reykjavik, Iceland. Teams qualified through tournaments within their regions to compete for the pride of their region and to be the first ever
+        international champions of VALORANT. Throughout history so far, two regions in partuiuclar maintained greater presence than all others being North America and Europe each showing the highest capabilties to become
+        the world's best. These two regions took center stage in this first international as the events frontrrunners as rivalries flared between fans and competitors alike.</p> 
+        <p> As the dust settled it came down to two: North America's Sentinels and Europe's FNATIC. Sentinels came in as 
+        North American favorites dominating the upper bracket without losing a game, besting FNATIC in an earlier match. FNATIC having lost traversed through the trecherous lower bracket but emerging stronger than ever.
+        These two teams became the pride of each of their regions going into the grand finals as many watched as the first international champion would be crowned. Sentinels took the series 3 - 0 in 3 nail-biting games 
+        completing their flawless run. </p>
+        <img src="51213371836_888c267881_c.jpg" 
+            style = "padding-left:75px; width: 370px; height: 200px;" alt="fncvssen"> 
+            <img src="Valorant_SentinelsDay7VCTStage2Masters.jpg" 
+            style = "padding-left:75px; width: 325px; height: 200px;" alt="senwin">
+    <h2 id="Masters_3_2021">Masters Berlin 2021</h2>
+    <p>After the first international tournament fans excitement were higher than ever. Eager to see this time which teams would represent their homelands in a now more global format with 16 teams attending.
+        The tournament continued the trend of battles between North America and Europe, while other regions such as Korea and South America showed their skills en route to qualify for the Top 8. </p>
+       <p> One new team in particular was the interest of the masses, the Russian roster of Gambit Esports showed high promise to be world class qualifying as Europe's top seeded team, in particular within fellow competitors in interviews regarding 
+        their practice matches against the squad. However, a shaky group stage including an embarassing upset loss against North American 2nd seed 100 Thieves blowing a 11-3 lead (first to 13), put fans in question.
+    Gambit silenced the doubters after qualifying to  playoffs, where they showed their full potential against their opponents most nottably a 13 - 0 decimation of fellow European team G2 Esports. Finishing with a 3 - 0
+win against North American Team Envy in Grand Finals. </p>
+<img src="Valorant-VCT-Masters-Berlin-Team-Envy-vs-Gambit-Esports.jpg" 
+            style = "padding-left:75px; width: 370px; height: 200px;" alt="nvvsgmb"> 
+            <img src="gambit-win-vct-masters-berlin-scaled.jpg" 
+            style = "padding-left:75px; width: 325px; height: 200px;" alt="gmbwin">
+    <h2 id="Champions_2021">Champions 2021</h2>
+    <p>The time finally came to see who would be the true champions of 2021. The stage was set with all storylines presented for fans to enjoy. Was this the year of North America, Europe or would a new regio rise to steal it away.
+        Could Gambit repeat their success? Would Sentinels rebound after their early exit in Berlin losing to Team Envy in Quarterfinals? Fans were at the edge of their seat to find out. This tournament was an event of 
+        many upsets and much unpredictability. All regions looked stronger than ever and none of which felt too behind the curve. Southeast Asia performed particularly well amongst minor regions, with all Filipino Team 
+        Secret qualifying to Top 8 after going 2-1 in group stage matches even taking one game in a best of 3 against defending champions Gambit Esports. Thai team X10 Esports turned heads after eliminating runner up Team Envy
+        to join the Top 8 ranks. South America's KRU Esports pulled off a miracle upset vs Sentinels, qualifying for playoffs to beat FNATIC in quaterfinals, eventually losing a heartbreaker quintuple overtime match against
+        Gambit to finish 3rd/4th.</p>
+<p> With North America caught in a storm of upsets hungry european teams arose to the top. In particular Acend Club was looking for redemption for a poor Berlin 2021 performance. And did so in fantastic fashion,
+    sweeping through the playoffs to a finale with Gambit that went the distance in a 3-2 victory.
+</p>
+<img src="51742700884_e0f9499b19_k-1024x732.jpg" 
+            style = "padding-left:75px; width: 370px; height: 200px;" alt="gmbvsace"> 
+            <img src="51743257579_779e042397_h.jpg" 
+            style = "padding-left:75px; width: 325px; height: 200px;" alt="acendwin">
+    
+    <h1>2022</h1>
+    <h2 id="Reykjavik_2022">Masters Reykjavik 2022</h2>
+    <p>Coming into Reykjavik 2022 the playing field had gotten more wide than ever with teams all over the globe showing promise. In particular teams such as Brazil's LOUD, North America's The Guard and 
+        Korea's DRX all showed capability of making deep runs from humble beginnings. However, amongst all the competitors one team in particular came in overlooked and shocked the world. Zeta Division from Japan became 
+        an overnight phenomenon taking upset win over upset win to place 3rd and putting a once thought to be dying out region on the radar. </p>
+        <p>This tournament was one of redemption for North America in particular the team Optic Gaming previously Team Envy. After falling just short of a championship in Berlin and etting grouped in Champions this squad
+            found itself on a tear through the tournament. In their way was LOUD the Brazillian super squadron who delivered in both talent, potential, and experience. The two teams met twice throughout the tournament with
+            LOUD getting the better of Optic in the first exchange. Optic bounced back in the lower bracket eliminating Zeta Division to get their rematch and beat the Brazillian squad 3 - 0 in grand finals.
+
+        </p>
+        <img src="images.jpg" 
+            style = "padding-left:75px; width: 370px; height: 200px;" alt="rjkfinals"> 
+            <img src="Valorant_MastersReykjavik2022_Champions_OpTic.jpg" 
+            style = "padding-left:75px; width: 325px; height: 200px;" alt="ogwin">
+    <h2 id="Copenhagen">Masters Copenhagen </h2>
+    <p>Masters Copenhagen continued the trend of even playing field across most regions. The group stage draw saw Optic and LOUD play each other in an elimation match early with Optic proving the winners and able to continue.
+        The tournament once again gave rise to new faces this time with Singapore's Paper Rex showing what they were made of with their explosive still getting them through to Grand Finals, beating teams like Optic and FNATIC, and making history being Asia's first ever international FPS grand finalist.
+        on the way. On the other hand FPX Esports had a tumultuous tournament playing with a substitute for most their way, once their full roster was fielded they became untouchable cleaning through the lower bracket
+        and going to the finals. In the finals, they played a grueling 5 game set winning 3-2 against Paper Rex.
+    </p>
+    <img src="FYYD0dyXoAAftzC.jpg" 
+            style = "padding-left:75px; width: 370px; height: 200px;" alt="prx"> 
+            <img src="FYYFANdWQAAp-6O.jpg" 
+            style = "padding-left:75px; width: 325px; height: 200px; " alt="fpx">
+    <h2 id="Champions_2022">Champions 2022</h2>
+            <p>Finally we arrive at the most recent international Champions 2022. To keep this one short and sweet, this was by far VALORANT's most comeptitive event with every match going down to games of inches.
+                FPX fell short at 4th defending their throne, while Paper Rex succumbed to upsets in groups. Optic looked once again like title contenders continuing their rivalry against LOUD. Teams like FNATIC, DRX,
+            and XSET made deep runs as perennial contenders. However, as fate would have it, one last match between Brazil's LOUD and North America's Optic Gaming would decide the second ever World Champion. 
+        The Brazillian squadron proved better this time and in convincing 3 - 1 fashion crowned themselves as the standing VALORANT World Champions.</p>
+        <img src="loud-win-ez.jpeg" 
+            style = "padding-left:175px; width: 500px; height: 300px;" alt="LLL"> 
+            
+
+    
+
+
+
+
+   
+    
+    
+    
+</div>
+      <div class="timeline">
+        <h1 style="color: white;">Historical Timeline</h1>
+        <h2 style="color: white; font-family: 'Comfortaa', sans-serif;">Click each container!</h2>
+        <div class="container left">
+          <div class="content1">
+            
+            <h2><a href="#Champions_2022">LOUD Win Champions 2022</a></h2>
+            <p>LOUD put Brazil on the map, after winning Champions 2022 against rival Optic Gaming</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2><a href="#Copenhagen">FPX Win Masters Copenhagen</a></h2>
+            <p>Beaing a red-hot Paper Rex, FPX put themselves in history as the 2nd CIS team to win an international event in a massive lower bracket run</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2><a href = "#Reykjavik_2022">Optic Gaming Win Masters Rekjavik 2022</a></h2>
+            <p>Building their legacy brick-by-brick Optic Gaming win Iceland in a Grand Final Rematch against LOUD</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content1">
+            <h2><a href = "#Champions_2021">Acend Win Champions 2021</a></h2>
+            <p>Acend become the first ever Champions event in unlikely run.</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2><a href = "#Masters_3_2021">Gambit Esports Win Masters Berlin</a></h2>
+            <p>Hailing from Russia Gambit Esports become the first European organization to lift an international trophy.</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2><a href = "#Masters_2_2021">Sentinels Win Master Rekjavik</a></h2>
+            <p>Sentinels give North America the first ever international title in a flawless run. </p>
+          </div>
+        </div>
+      </div>
+      
+
+<div id="footer" style="padding-top: 1725px;float:right;" > <p><b>Copyright &copy; 2022. ValoTracker(not official). All Rights Reserved.</b></p></div>
+
+
+</body>
+</html>
